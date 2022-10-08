@@ -1,12 +1,12 @@
 import React from "react";
 import { NavLink } from "react-router-dom"
-import { Nav, Container, Navbar as NavbarBs } from 'react-bootstrap'
+import { Nav, Container, Navbar as NavbarTop } from 'react-bootstrap'
 
 
 function Navbar() {
     return (
         <>
-            <NavbarBs sticky="top" variant="dark" style={{ height:80 }}>
+            <NavbarTop sticky="top" variant="dark" bg="dark" style={{ height:80 }}>
                 <Container>
                     <Nav className="me auto">
                         <Nav.Link to="/" as={NavLink}>
@@ -26,7 +26,7 @@ function Navbar() {
                         </Nav.Link>
                     </Nav>
                 </Container>
-            </NavbarBs>
+            </NavbarTop>
         </>
     )
 }

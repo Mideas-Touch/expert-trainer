@@ -1,10 +1,10 @@
 import { Routes, Route } from "react-router-dom"
-import './App.css';
+
 import { Container } from 'react-bootstrap';
-import { Home } from './components/Home'
-import { Skills } from './components/Skills'
-import { Settings } from './components/Settings'
-import { Productivity } from './components/Productivity'
+import { Home } from './pages/Home'
+import { Skills } from './pages/Skills'
+import { Settings } from './pages/Settings'
+import { Productivity } from './pages/Productivity'
 import Navbar from './components/Navbar';
 
 function App() {
