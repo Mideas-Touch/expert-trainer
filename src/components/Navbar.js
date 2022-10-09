@@ -6,11 +6,15 @@ import { Nav, Container, Navbar as NavbarTop } from 'react-bootstrap'
 function Navbar() {
     return (
         <>
-            <NavbarTop sticky="top" variant="dark" bg="dark" style={{ height:80 }}>
+            <NavbarTop className="shadow-md mb-3" sticky="top" variant="dark" bg="dark" style={{ height:80 }}>
                 <Container>
+                    <NavbarTop.Brand>
+                        <Nav.Link to="/" as={NavLink}>
+                            Expert Trainer
+                        </Nav.Link>
+                    </NavbarTop.Brand>
                     <Nav className="me auto">
                         <Nav.Link to="/" as={NavLink}>
-                            Home
                         </Nav.Link>
                         <Nav.Link to="/skills" as={NavLink}>
                             Skills

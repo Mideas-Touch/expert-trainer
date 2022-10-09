@@ -1,3 +1,9 @@
+import SkillItem from "../components/SkillItem";
+
 export function Productivity(){
-    return <h1>Productivity</h1>
+    return (
+        <>
+            <SkillItem />
+        </>
+    )
 }

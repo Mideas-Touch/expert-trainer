@@ -1,11 +1,14 @@
-import Navbar from "../components/Navbar"
+import Achievements from "../components/Achievements";
+import AddSkill from "../components/AddSkill";
+import Header from "../components/Header";
+import SkillItem from "../components/SkillItem";
 
 export function Home(){
     return (
         <>
-            <header>
-                <h1>Expert-Trainer</h1>
-            </header>
+            <Header />
+            <Achievements />
+            <AddSkill />
         </>
     )
 }
