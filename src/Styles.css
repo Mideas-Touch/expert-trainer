@@ -4,17 +4,18 @@ body{
     
 }
 
-.overlay{
+/* .overlay{
     background-image: url("../public/assets/images/silhouette-of-trophy-cup-winner-with-a-laurel-vector-7789635.jpg");
     height: 40vh;
     margin-top: 5vh;
-    /* object-fit: cover; */
+    object-fit: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 80%;
-}
+} */
 
 .center-heading{
     text-align: center;
 }
+

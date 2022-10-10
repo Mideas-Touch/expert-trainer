@@ -1,5 +1,6 @@
 import {  Container,Table } from 'react-bootstrap'
 
+
 // type SkillItemProps = {
 //     id: Number
 //     name: String

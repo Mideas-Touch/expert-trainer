@@ -7,7 +7,7 @@ export function Home(){
     return (
         <>
             <Header />
-            <Achievements />
+            {/* <Achievements /> */}
             <AddSkill />
         </>
     )
