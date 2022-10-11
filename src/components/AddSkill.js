@@ -42,7 +42,7 @@ export default function AddSkill() {
   return (
     <>
     <Container className='' style={{Position: "relative", textAlign: "center" }}>
-        <Button onClick={handleAddSkill} variant="danger outline primary" className='fs-5'  style={{ Position: "Absolute", }}>+</Button>
+        <Button  variant="danger outline primary" className='fs-5'  style={{ Position: "Absolute", }}>+</Button>
     </Container>
     </>
   )
