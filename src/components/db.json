@@ -1,0 +1,25 @@
+{
+    "skills": [
+      {
+        "id": 1,
+        "name": "Football",
+        "time": "120"
+      },
+      {
+        "id": 2,
+        "name": "Football",
+        "time": "120"
+      },
+      {
+        "id": 3,
+        "name": "Football",
+        "time": "120"
+      },
+      {
+        "id": 4,
+        "name": "Football",
+        "time": "120"
+      }
+      
+    ]
+  }

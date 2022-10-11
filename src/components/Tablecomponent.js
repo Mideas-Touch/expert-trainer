@@ -1,4 +1,9 @@
+import React from 'react'
 import {  Container,Table } from 'react-bootstrap'
+
+// useEffect(() => {
+//     fetch()
+// })
 
 
 // type SkillItemProps = {
@@ -7,7 +12,7 @@ import {  Container,Table } from 'react-bootstrap'
 //     date: Date
 // }
 
-export default function SkillItem({id, name, date}) {
+export default function Tablecomponent({id, name, date}) {
     // const [skill, addNewSkill] = useState([])
 
   return (

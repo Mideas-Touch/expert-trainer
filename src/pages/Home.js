@@ -1,14 +1,17 @@
 import Achievements from "../components/Achievements";
-import AddSkill from "../components/AddSkill";
+import Dataform from "../components/Dataform";
 import Header from "../components/Header";
-import SkillItem from "../components/SkillItem";
+import Tablecomponent from "../components/Tablecomponent";
+import Timer from "../components/Timer";
 
 export function Home(){
     return (
         <>
             <Header />
-            {/* <Achievements /> */}
-            <AddSkill />
+            {/* <Achievements />
+            <Tablecomponent /> */}
+            <Dataform />
+            <Timer />
         </>
     )
 }
