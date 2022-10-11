@@ -1,49 +1,49 @@
 import React, { useEffect, useState } from 'react'
-import { Button, Container } from 'react-bootstrap'
+import { Button, Container, FormControl, FormLabel } from 'react-bootstrap'
 
 // timerElement = document.getElementById('timer')
 
 export default function AddSkill() {
-    const [time, setTime] = useState(new Date())
+  const [activity, setActivity] = useState("")
+  const [target, setTarget] = useState()
 
-    function Form(){
-        const [activity, setActivity] = useState([])
+  function handleSubmit(e){
+    e.preventDefault();
 
-        function handleActivityName(event){
-            
-        }
+    //set up JSX
+    const formData = {
+      id: new Date().getTime(),
+      firstValue: activity,
+      secondValue: target,
     }
-
-    // function handleAddSkill(){
-    //     setInterval(() => {
-    //        getTimerTime()
-    //     }, 1000);
-    // }
-
-    // function getTimerTime(){
-    //     return Math.floor((new Date() - (setTime => time)) / 1000)
-    // }
-
-// function handleAddSkill(){
-//     let startTime
-
-//     timerElement.innerText = 0
-//     startTime - new Date()
-//     setInterval(() => {
-//         timerElement.innerText = getTimerTime()
-//     }, 1000)
-// }
-
-// function getTimerTime(){
-//     return Math.floor((new Date() - startTime) / 1000)
-// }
+  
+  }
    
 
   return (
     <>
-    <Container className='' style={{Position: "relative", textAlign: "center" }}>
-        <Button  variant="danger outline primary" className='fs-5'  style={{ Position: "Absolute", }}>+</Button>
-    </Container>
+        {/* <FormControl placeholder='Activity name' onSubmit={handleSubmit}>
+          <FormLabel>
+            Activity:
+            <input
+              onChange={(e) => setActivity(e.target.value)} 
+              value={activity}
+              type="text"
+              name="activity"
+              // value={e.target.value}
+            />
+          </FormLabel>
+        
+        <FormLabel>
+          Target:
+          <input
+            onChange={(e) => setTarget(e.target.value)}
+            value={target}
+            type="number"
+            // value={e.target.value}
+          />
+        </FormLabel>
+      </FormControl> */}
     </>
   )
 }
