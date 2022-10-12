@@ -11,7 +11,6 @@ export function Skills(){
             <Card.Body className="d-flex flex-column">
                 <h3>duration</h3>
             </Card.Body>
-            <Button>Add</Button>
         </Card>
     )
 }

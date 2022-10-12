@@ -1,40 +1,35 @@
+import { Table as TableContainer } from 'react-bootstrap'
+import Table from './Table'
 import React, { useEffect, useState } from 'react'
-import {  Table } from 'react-bootstrap'
-import App from '../App'
 
 
-export default function Tablecomponent({item}) {
+export default function Tablecomponent() {
 
     const [items, setItems] = useState([])
+    console.log(items)
 
     useEffect(() =>{
         fetch('http://localhost:3000/activities')
         .then(response => response.json())
-        .then(data => {
+        .then(items => {
             setItems(items)
         })      
     }, [])
 
-
+    console.log(items)
 
   return (
-    <Container className="mt-5" style={{ width: "60%", padding: ".8rem", float: "right"}}>
-        <Table>
+        <TableContainer>
             <thead>
                 <tr>
-                    <th>{key}</th>
-                    <th>Activity</th>
+                    <th>Activity ID</th>
+                    <th>Activity Name</th>
                     <th>Duration</th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>{title}</td>
-                    <td>{minutes}</td>
-                </tr>
+            { items.map(item => <Table key={item.id} item={item} title={item.title} minutes={item.minutes} />)} 
             </tbody>
-        </Table>
-    </Container>
+        </TableContainer>
   )
 }

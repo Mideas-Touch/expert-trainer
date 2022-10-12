@@ -6,16 +6,18 @@ import { Skills } from './pages/Skills'
 import { Settings } from './pages/Settings'
 import { Productivity } from './pages/Productivity'
 import Navbar from './components/Navbar';
-import Tablecomponent from "./components/Tablecomponent";
+
 
 function App() {
-  let itemList = items.map((item, ind) => {
-    return (
-        <Tablecomponent key={item.id} item={item}
-    title={item.title} minutes={item.minutes} />
-  )
-    })
-    
+
+  
+  // let itemList = items.map((item, ind) => {
+  //   return (
+  //       <Tablecomponent key={ind} item={item}
+  //   title={item.title} minutes={item.minutes} />
+  // )
+  //   })
+
   return (
     <>
       <Navbar />

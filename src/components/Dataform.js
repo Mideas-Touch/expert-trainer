@@ -1,11 +1,12 @@
 import React, {  useState } from 'react'
 import {  Button, Form, FormControl, FormLabel } from 'react-bootstrap'
+import { Skills } from '../pages/Skills'
 
 // timerElement = document.getElementById('timer')
 
-function Dataform({Timer}) {
+function Dataform({Card}) {
   const [activity, setActivity] = useState("")
-  const [target, setTarget] = useState()
+  const [target, setTarget] = useState("")
 
   function handleSubmit(e){
     e.preventDefault();
@@ -13,6 +14,16 @@ function Dataform({Timer}) {
       activity: activity,
       target: target,
     }
+
+    fetch(`http://localhost:3000/activities`, {
+method: 'POST',
+headers: {'Content-Type': 'application/json', 'Accept': 'application/json'},
+body: JSON.stringify(formDataObj)})
+.then(result => result.json())
+.then(data => {
+   //Weka hapa the code that will display the data to the dom
+})
+
 
     console.log(activity)
     console.log(target)

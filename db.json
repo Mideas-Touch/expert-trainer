@@ -11,15 +11,19 @@
       "minutes": "25"
     },
     {
-      "id": 1,
+      "id": 3,
       "title": "Work",
       "minutes": "120"
     },
     {
-      "id": 1,
+      "id": 4,
       "title": "Race",
       "minutes": "200"
+    },
+    {
+      "activity": "chess",
+      "target": "20",
+      "id": 5
     }
-   
   ]
 }
