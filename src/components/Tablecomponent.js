@@ -1,35 +1,37 @@
-import React from 'react'
-import {  Container,Table } from 'react-bootstrap'
-
-// useEffect(() => {
-//     fetch()
-// })
+import React, { useEffect, useState } from 'react'
+import {  Table } from 'react-bootstrap'
+import App from '../App'
 
 
-// type SkillItemProps = {
-//     id: Number
-//     name: String
-//     date: Date
-// }
+export default function Tablecomponent({item}) {
 
-export default function Tablecomponent({id, name, date}) {
-    // const [skill, addNewSkill] = useState([])
+    const [items, setItems] = useState([])
+
+    useEffect(() =>{
+        fetch('http://localhost:3000/activities')
+        .then(response => response.json())
+        .then(data => {
+            setItems(items)
+        })      
+    }, [])
+
+
 
   return (
     <Container className="mt-5" style={{ width: "60%", padding: ".8rem", float: "right"}}>
         <Table>
             <thead>
                 <tr>
-                    <th>#</th>
-                    <th>Activitiy</th>
+                    <th>{key}</th>
+                    <th>Activity</th>
                     <th>Duration</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td>1</td>
-                    <td>Hockey</td>
-                    <td>35min</td>
+                    <td>{title}</td>
+                    <td>{minutes}</td>
                 </tr>
             </tbody>
         </Table>

@@ -1,6 +1,5 @@
 import React, {  useState } from 'react'
 import {  Button, Form, FormControl, FormLabel } from 'react-bootstrap'
-import Timer from './Timer'
 
 // timerElement = document.getElementById('timer')
 
@@ -14,8 +13,6 @@ function Dataform({Timer}) {
       activity: activity,
       target: target,
     }
-
-    return <Timer timeElapsed={timeElapsed} />
 
     console.log(activity)
     console.log(target)

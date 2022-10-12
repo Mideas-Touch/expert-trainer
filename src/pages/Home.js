@@ -2,7 +2,7 @@ import Achievements from "../components/Achievements";
 import Dataform from "../components/Dataform";
 import Header from "../components/Header";
 import Tablecomponent from "../components/Tablecomponent";
-import Timer from "../components/Timer";
+
 
 export function Home(){
     return (
@@ -10,8 +10,8 @@ export function Home(){
             <Header />
             {/* <Achievements />
             <Tablecomponent /> */}
+            <Tablecomponent />
             <Dataform />
-            <Timer />
         </>
     )
 }

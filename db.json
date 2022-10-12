@@ -1,19 +1,25 @@
 {
-  "posts": [
+  "activities": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "title": "Swimming",
+      "minutes": "45"
+    },
+    {
+      "id": 2,
+      "title": "Hockey",
+      "minutes": "25"
+    },
     {
       "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "title": "Work",
+      "minutes": "120"
+    },
+    {
+      "id": 1,
+      "title": "Race",
+      "minutes": "200"
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+   
+  ]
 }
