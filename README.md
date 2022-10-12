@@ -9,7 +9,7 @@
 
 # Overall Project Description
 
-    I had intended this project to be an app where users can log training hours to measure their productivity. However, I'm not ripe enough yet,so, this is a website application incorporating some fetch requests with some practice on components and their hierarchy.
+I had intended this project to be an app where users can log training hours to measure their productivity. However, I'm not ripe enough yet,so, this is a website application incorporating some fetch requests with some practice on components and their hierarchy.
 
 
 # Languages and Frameworks
