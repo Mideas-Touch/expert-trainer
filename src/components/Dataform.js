@@ -1,8 +1,8 @@
 import React, {  useState } from 'react'
 import {  Button, Form, FormControl, FormLabel } from 'react-bootstrap'
-import { Skills } from '../pages/Skills'
+import Table from './Table'
 
-// timerElement = document.getElementById('timer')
+
 
 function Dataform({Card}) {
   const [activity, setActivity] = useState("")
@@ -20,7 +20,8 @@ method: 'POST',
 headers: {'Content-Type': 'application/json', 'Accept': 'application/json'},
 body: JSON.stringify(formDataObj)})
 .then(result => result.json())
-.then(data => {
+.then(data => { 
+  data.map(item => <Table key={data.id} data={data} title={data.activity} minutes={data.target} />)
    //Weka hapa the code that will display the data to the dom
 })
 

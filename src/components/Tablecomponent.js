@@ -14,7 +14,7 @@ export default function Tablecomponent() {
         .then(items => {
             setItems(items)
         })      
-    }, [])
+    }, [Table])
 
     console.log(items)
 
