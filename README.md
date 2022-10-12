@@ -1,9 +1,9 @@
 # Expert Trainer 
-    ## Description
-    ## Setup instructions
-    ## Technology Used
-    ## Licence
-    ## Authors Info
+    - Description
+    - Setup instructions
+    - Technology Used
+    - Licence
+    - Authors Info
 
 # Overall Project Description
 
