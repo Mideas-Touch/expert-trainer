@@ -1,9 +1,11 @@
-# Expert Trainer 
-    - Description
-    - Setup instructions
-    - Technology Used
-    - Licence
-    - Authors Info
+# Expert Trainer- [Expert Trainer](#expert-trainer)
+- [Expert Trainer- Expert Trainer](#expert-trainer--expert-trainer)
+- [Overall Project Description](#overall-project-description)
+- [Languages and Frameworks](#languages-and-frameworks)
+- [Known Bugs](#known-bugs)
+- [Author](#author)
+- [License](#license)
+  - [MIT License](#mit-license)
 
 # Overall Project Description
 
@@ -12,9 +14,9 @@
 
 # Languages and Frameworks
 
-    ## React
-    ## React-Bootstrap
-    ## JavaScript
+- React
+- React-Bootstrap
+- JavaScript
 
 # Known Bugs
 
@@ -22,8 +24,8 @@
 
 
 # Author
-  Wycliffe Ndung'u
-  Project Link: https://github.com/flipblip/expert-trainer/
+- Wycliffe Ndung'u
+- Project Link: https://github.com/flipblip/expert-trainer/
 
 # License
 ## MIT License
