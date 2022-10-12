@@ -1,6 +1,6 @@
 import { Card } from "react-bootstrap";
 import CardHeader from "react-bootstrap/esm/CardHeader";
-import Dataform from "../components/Dataform";
+
 
 export function Skills(){
     return (
