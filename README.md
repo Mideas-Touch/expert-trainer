@@ -20,7 +20,7 @@ I had intended this project to be an app where users can log training hours to m
 
 # Known Bugs
 
-Form does not appropriately update (only updates the key) submitted information to the dom.
+The page must be refreshed to see posted data.
 
 
 # Author
