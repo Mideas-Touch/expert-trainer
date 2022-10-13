@@ -1,33 +1,40 @@
 import React, {  useState } from 'react'
 import {  Button, Form, FormControl, FormLabel } from 'react-bootstrap'
 import Table from './Table'
+import { Table as TableContainer } from 'react-bootstrap'
 
 
 
 function Dataform({Card}) {
-  const [activity, setActivity] = useState("")
-  const [target, setTarget] = useState("")
+  const [title, setActivity] = useState("")
+  const [minutes, setTarget] = useState("")
 
   function handleSubmit(e){
     e.preventDefault();
     let formDataObj = {
-      activity: activity,
-      target: target,
+      title: title,
+      minutes: minutes,
     }
 
-    fetch(`http://localhost:3000/activities`, {
-method: 'POST',
-headers: {'Content-Type': 'application/json', 'Accept': 'application/json'},
-body: JSON.stringify(formDataObj)})
-.then(result => result.json())
-.then(data => { 
-  data.map(item => <Table key={data.id} data={data} title={data.activity} minutes={data.target} />)
-   //Weka hapa the code that will display the data to the dom
-})
+  fetch(`http://localhost:3000/activities`, {
+  method: 'POST',
+  headers: {'Content-Type': 'application/json', 'Accept': 'application/json'},
+  body: JSON.stringify(formDataObj)})
+  .then(result => result.json())
+  .then(data => { 
+    <TableContainer>
+
+{/* { items.map(item => <Table key={item.id} item={item} title={item.title} minutes={item.minutes} />)} */}
+            <tbody>
+            {data.map(item => <Table key={formDataObj.id} item={formDataObj} title={formDataObj.title} minutes={formDataObj.minutes} />)}
+            </tbody>
+           
+        </TableContainer>
+  })
 
 
-    console.log(activity)
-    console.log(target)
+    // console.log(activity)
+    // console.log(target)
 
     //set up JSX
     // const formData = {
@@ -46,7 +53,7 @@ body: JSON.stringify(formDataObj)})
             Activity:
             <FormControl
               onChange={(e) => setActivity(e.target.value)} 
-              value={activity}
+              value={title}
               placeholder="Enter new activity"
               type="text"
               name="activity"
@@ -58,7 +65,7 @@ body: JSON.stringify(formDataObj)})
           Target:
           <FormControl
             onChange={(e) => setTarget(e.target.value)}
-            value={target}
+            value={minutes}
             type="number"
             placeholder='Enter target time'
             // value={e.target.value}

@@ -26,9 +26,19 @@
       "id": 5
     },
     {
-      "activity": "chess",
-      "target": "20",
+      "title": "gamws",
+      "minutes": "20",
       "id": 6
+    },
+    {
+      "title": "gamws",
+      "minutes": "20",
+      "id": 7
+    },
+    {
+      "title": "gamws",
+      "minutes": "20",
+      "id": 8
     }
   ]
 }
