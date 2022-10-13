@@ -5,7 +5,7 @@
 - [Known Bugs](#known-bugs)
 - [Author](#author)
 - [License](#license)
-  - [MIT License](#mit-license)
+- [MIT License](#mit-license)
 
 # Overall Project Description
 
@@ -20,7 +20,7 @@ I had intended this project to be an app where users can log training hours to m
 
 # Known Bugs
 
-    Form does not appropriately update (only updates the key) submitted information to the dom.
+Form does not appropriately update (only updates the key) submitted information to the dom.
 
 
 # Author
